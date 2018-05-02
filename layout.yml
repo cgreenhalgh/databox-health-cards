@@ -2,16 +2,26 @@
 # adjusted for business card size (e.g. Moo) bleed 59 (697) x 88 (1039); trim 55 (650/+23.5) x 84 (992/+23.5); safe 51 (602/+47) x 80 (945/+47)
 title:
   x: 90
-  y: 90
+  y: 60
   width: 517
   height: 50
   align: center
 
 art:
-  x: 139
+  x: 189
   y: 150
-  width: 420
-  height: 420
+  width: 320
+  height: :scale
+  align: center
+  crop_height: 320
+  
+art_credit:
+  x: 189
+  y: 500
+  width: 320
+  height: 20
+  font_size: 3
+  align: center
 
 description:
   x: 100
@@ -33,9 +43,10 @@ type:
 
 lower_right:
   x: 572
-  y: 917
+  y: 913
   width: 75
-  height: 75
+  #height: 75
+  height: :scale
   font_size: 6
   valign: bottom
   align: right
@@ -44,7 +55,7 @@ lr: #alias
 
 lower_left:
   x: 75
-  y: 917
+  y: 907
   width: 75
   height: 75
   font_size: 6

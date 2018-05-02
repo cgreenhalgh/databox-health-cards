@@ -1,6 +1,7 @@
 require 'squib'
 
 data = Squib.csv file: 'card-data.csv'
+icon_credits = YAML.load(File.read("icons/credits.yml"))
 
 # moo bleed size?!
 Squib::Deck.new(cards: data['title'].size, layout: 'layout.yml', width: '59mm', height: '88mm') do
@@ -11,8 +12,12 @@ Squib::Deck.new(cards: data['title'].size, layout: 'layout.yml', width: '59mm', 
   rect layout: 'safe' # safe zone as defined by TheGameCrafter
   text str: data['title'], layout: 'title'
   text str: data['description'], layout: 'description'
-  png file: data['icon'].map { |n| "icons/#{n}.png" }, layout: 'art'
-  png file: data['group'].map { |n| "icons/group-#{n.downcase}.png" }, layout: 'lower_right'
+  # or png
+  #png file: data['icon'].map { |n| "icons/#{n}.png" }, layout: 'art'
+  #png file: data['group'].map { |n| "icons/group-#{n.downcase}.png" }, layout: 'lower_right'
+  svg file: data['icon'].map { |n| "icons/#{n}.svg" }, layout: 'art'
+  text str: data['icon'].map { |n| icon_credits[n] }, layout: 'art_credit', format: true
+  svg file: data['group'].map { |n| "icons/group-#{n.downcase}.svg" }, layout: 'lower_right'
   text str: data['group'], layout: 'lower_left'
   
   save format: :png
