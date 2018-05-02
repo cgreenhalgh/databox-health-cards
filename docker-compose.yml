@@ -1,0 +1,7 @@
+version: '3'
+services:
+  squib:
+    build: .
+    image: squib
+    volumes:
+      - ".:/root/work"
