@@ -16,9 +16,9 @@ art:
   crop_height: 320
   
 art_credit:
-  x: 189
+  x: 55
   y: 500
-  width: 320
+  width: 602
   height: 20
   font_size: 3
   align: center
@@ -30,7 +30,7 @@ description:
   height: 260
   valign: middle
   align: center
-  font_size: 6
+  font_size: 8
 desc: # alias
   extends: description
 
@@ -56,9 +56,9 @@ lr: #alias
 lower_left:
   x: 75
   y: 907
-  width: 75
+  width: 150
   height: 75
-  font_size: 6
+  font_size: 8
   valign: bottom
   align: left
 ll: # alias

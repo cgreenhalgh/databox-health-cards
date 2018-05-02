@@ -7,9 +7,9 @@ icon_credits = YAML.load(File.read("icons/credits.yml"))
 Squib::Deck.new(cards: data['title'].size, layout: 'layout.yml', width: '59mm', height: '88mm') do
   background color: 'white'
   # rectangle around card
-  rect
-  rect layout: 'cut' # cut line as defined by TheGameCrafter
-  rect layout: 'safe' # safe zone as defined by TheGameCrafter
+  #rect
+  #rect layout: 'cut' # cut line as defined by TheGameCrafter
+  #rect layout: 'safe' # safe zone as defined by TheGameCrafter
   text str: data['title'], layout: 'title'
   text str: data['description'], layout: 'description'
   # or png
@@ -21,6 +21,6 @@ Squib::Deck.new(cards: data['title'].size, layout: 'layout.yml', width: '59mm', 
   text str: data['group'], layout: 'lower_left'
   
   save format: :png
-  # moo trim is smaller than squib examples
-  save_pdf trim: 23.5
+  # moo trim is smaller than squib examples; A4 narrower than letter
+  save_pdf trim: 23.5, height: 2200
 end

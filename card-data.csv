@@ -1,3 +1,30 @@
 title,description,icon,group
-Data,bob,data,Data
-Stuff,,missing,Data
+Bank records,"Your financial transactions, including each time you bought something with a credit or debit card.",bank-transaction,Data
+Phone calls,"Each phone call you have made, including when you made the call, how long it was and the number you called.",phone-call,Data
+Emails,"The emails you have sent and received, including when you sent them, who they were sent to and the text of the message.",email,Data
+Social media,The posts and comments you have made on social media such as Facebook.,social-media,Data
+Photos,"The photos you have taken, especially when these are uploaded to cloud storage or posted on social media.",photo,Data
+Sleep,"How long you have slept for and at what times, and an estimate of quality of that sleep.",sleep,Data
+Weight,You weight as measured by bathroom scales.,bathroom-scale,Data
+Meals and diet,What you have eaten and when.,meal,Data
+Mood self-report,Your mood in response to a simple prompt or question.,mood,Data
+Location,Journeys you have made and places that you have spent time (where and when).,location,Data
+Web activity,The web sites you have looked at and web searches you have done.,web,Data
+Media consumption,The music you have listened to the videos/TV you have watched.,tv,Data
+E-Health Record,"Your electronic medical records, including alergies, current mediation, symptoms, test results and diagnoses.",medical-record,Data
+Phone,Your smart phone and the apps installed on it.,phone,Device
+Activity tracker,"Your activity tracker, such as a fitbit or smart watch.",activity-tracker,Device
+Databox,"A databox device installed and running in your home, rather like a home access point for data.",router,Device
+Server,A computer owned and managed by someone else that runs programs and services for you.,server,Device
+Third-part service,"An application, service or web site run by some else that you use, e.g. Facebook, Fitbit, Spotify, Google.",cloud-service,Device
+You,This is you!,person,Person
+Family member,Someone else in your family.,family,Person
+Colleague,Someone you work with.,colleague,Person
+Stranger,Someone you don't know at all.,stranger,Person
+Health professional,"A doctor, nurse, psychiatrist, public health researcher, ?",doctors,Person
+Summary report,A short summary of your data or activity.,summary,Use
+Detailed report,"A detailed report of your data or activity, including very specific information about individual activities.",report,Use
+Complete data,A complete copy of all of the data that has been collected with nothing missed out.,data-copy,Use
+Automatic profiling,"A computers recommendation based on your data, for example whether or not you are ""at risk"".",automatic-profile,Use
+Automatic alert,A message sent to another person automatically based on changes in your data.,alert,Use
+Population analysis,"A description of a large group of people based on data from lots of people, including you.",population,Use
