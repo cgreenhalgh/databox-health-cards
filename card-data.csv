@@ -21,7 +21,7 @@ You,This is you!,person,Person
 Family member,Someone else in your family.,family,Person
 Colleague,Someone you work with.,colleague,Person
 Stranger,Someone you don't know at all.,stranger,Person
-Health professional,"A doctor, nurse, psychiatrist, public health researcher, ?",doctors,Person
+Health professional,"A doctor, nurse, psychiatrist or public health researcher.",doctors,Person
 Summary report,A short summary of your data or activity.,summary,Use
 Detailed report,"A detailed report of your data or activity, including very specific information about individual activities.",report,Use
 Complete data,A complete copy of all of the data that has been collected with nothing missed out.,data-copy,Use
