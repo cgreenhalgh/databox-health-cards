@@ -24,9 +24,10 @@ Squib::Deck.new(cards: n, layout: 'layout.yml', width: '59mm', height: '88mm', d
   # or png
   #png file: data['icon'].map { |n| "icons/#{n}.png" }, layout: 'art'
   #png file: data['group'].map { |n| "icons/group-#{n.downcase}.png" }, layout: 'lower_right'
-  svg range: 0..nf, file: data['icon'].map { |n| "icons/#{n}.svg" }, layout: 'art'
-  text range: 0..nf, str: data['icon'].map { |n| icon_credits[n] }, layout: 'art_credit' 
-  svg range: 0..nf, file: data['group'].map { |n| "icons/group-#{n.downcase}.svg" }, layout: 'lower_right'
+  #default image
+  svg range: 0..nf, file: data['icon'].map { |n| (n.to_s == '' ? 'icons/default.svg' : "icons/#{n}.svg" ) }, layout: 'art'
+  text range: 0..nf, str: data['icon'].map { |n| (n.to_s == '' ? '' : icon_credits[n] ) }, layout: 'art_credit' 
+  svg range: 0..nf, file: data['group'].map { |n| (n.to_s == '' ? 'icons/default.svg' : "icons/group-#{n.downcase}.svg" ) }, layout: 'lower_right'
   text range: 0..nf, str: data['group'], layout: 'lower_left'
   
   save format: :png
