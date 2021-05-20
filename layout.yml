@@ -7,6 +7,13 @@ title:
   height: 50
   align: center
 
+back_title:
+  x: 90
+  y: 520
+  width: 517
+  height: 50
+  align: center
+
 art:
   x: 189
   y: 150

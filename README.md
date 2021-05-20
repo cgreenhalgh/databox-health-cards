@@ -19,3 +19,11 @@ sudo docker run --rm -it -v `pwd`:/root/work squib /bin/bash
 ```
 ruby deck.rb
 ```
+
+output in _output
+card_00.png
+Altas_0.png
+Atlas is up to 5x3 cards
+
+Note, last card is 'back' by default
+
