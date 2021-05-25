@@ -32,6 +32,6 @@ Squib::Deck.new(cards: n, layout: 'layout.yml', width: '59mm', height: '88mm', d
   
   save format: :png
   # moo trim is smaller than squib examples; A4 narrower than letter
-  save_pdf trim: 23.5, height: 2200
+  save_pdf file: 'output.pdf', trim: 23.5, height: 2200
   save_sheet count_format: '%d', rows: 3, columns: 5, prefix: 'Atlas_'
 end
