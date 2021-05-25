@@ -1,6 +1,9 @@
 # card generation & output options, used in deck.rb
 # also used e.g. by cardographer to handle output flexibly
 
+# csv file
+csvfile: 'card-data.csv'
+
 # layout file
 layout: 'layout.yml'
 
@@ -14,7 +17,7 @@ height: '88mm'
 dpi: 300
 
 # last card is back (different layout)
-last_id_back: true
+last_is_back: true
 
 # output directory
 output: '_output'
@@ -39,5 +42,10 @@ png:
   prefix: 'card_'
 
   # filename count format
-  count_format: '%0d'
+  count_format: '%02d'
+
+# pdf output config
+pdf:
+  # filename
+  file: 'output.pdf'
 
